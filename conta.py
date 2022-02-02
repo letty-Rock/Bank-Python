@@ -46,4 +46,6 @@ class Conta:
     @limite.setter
     def limite(self, limite):
         self.__limite = limite
-    
+    @staticcmethod   
+    def codigo_banco(self):
+        return "001"
