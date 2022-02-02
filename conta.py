@@ -23,7 +23,7 @@ class Conta:
     def get_titular(self):
         return self.__titular
 
-    def get__limite(self):
+    def get_limite(self):
         return self.__limite
     def set_limite(self,limite):
         self.__limite = limite     
