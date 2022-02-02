@@ -8,15 +8,18 @@ class Conta:
     def extrato(self):
         print("Saldo de R$ {} do titular {}".format(self.__saldo, self.__titular))
 
-    def deposita(self,valor):
+    def deposita(self, valor):
         self.__saldo += valor
         print("Você depositou R$ {}".format(valor))
-    def sacar(self,valor):
+
+    def sacar(self, valor):
         self.__saldo -= valor
         print("Você sacou R$ {}".format(valor))
-    def transferir(self,valor,destino):
+
+    def transferir(self, valor, destino):
          self.sacar(valor)
          destino.deposita(valor)
+
     def get_saldo(self):
         return self.__saldo
 
@@ -25,5 +28,6 @@ class Conta:
 
     def get_limite(self):
         return self.__limite
-    def set_limite(self,limite):
-        self.__limite = limite     
+
+    def set_limite(self, limite):
+        self.__limite = limite
